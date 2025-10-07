@@ -12,7 +12,6 @@ public class Main {
 
         bankAccount.deposit(1000);
         bankAccount.withdraw(250);
-
         println( bankAccount.getBalance() );
     }
 }
