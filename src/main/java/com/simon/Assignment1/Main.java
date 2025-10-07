@@ -1,5 +1,7 @@
 package com.simon.Assignment1;
 
+// 1. Skapa en klass Person med namn och ålder. Skapa ett objekt och skriv ut dess värden
+
 import static java.lang.IO.*;
 
 public class Main {
