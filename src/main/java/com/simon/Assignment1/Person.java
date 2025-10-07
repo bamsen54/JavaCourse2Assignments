@@ -36,4 +36,10 @@ public class Person {
 
         this.age = age;
     }
+
+    // 5.Skriv en metod isOlderThan() i klassen Person som jämför två personer
+    public boolean isOlderThan(Person person) {
+
+        return this.age > person.getAge();
+    }
 }

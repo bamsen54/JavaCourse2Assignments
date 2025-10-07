@@ -8,8 +8,17 @@ public class Main {
 
     void main() {
 
-        Person person =  new Person("Jane Doe", 30);
+        Person person1 = new Person( "Jane Doe", 21 );
+        Person person2 = new Person( "John Doe", 30 );
 
-        println( person.getName() + " " + person.getAge() );
+        if( person1.isOlderThan(person2) )
+            println( "person1 is older" );
+
+        else if( person1.getAge() == person2.getAge() )
+            println( "they are the same age" );
+
+        else
+            println( "person2 is older" );
+
     }
 }
