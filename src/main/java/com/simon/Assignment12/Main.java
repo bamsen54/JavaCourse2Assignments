@@ -5,7 +5,7 @@ package com.simon.Assignment12;
 
 import static java.lang.IO.*;
 
-public class Assignment12 {
+public class Main {
 
     public void main() {
 
