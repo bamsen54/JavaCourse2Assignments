@@ -1,6 +1,7 @@
 package com.simon.Assignment41;
 
-// 41. Skapa ett interface Playable och implementera det i Game, Song och Video.
+// 41. Skapa ett interface Payable med metoden calculatePayment(). Implementera i
+//Employee och Freelancer.
 
 import static java.lang.IO.*;
 
@@ -8,29 +9,10 @@ public class Main {
 
     void main() {
 
-        Game game   = new Game("Fortnite");
-        Song song   = new Song("Billie Jean");
-        Video video = new Video("Baby Shark");
+        Employee employee = new Employee(1000);
+        Freelancer freelancer = new Freelancer();
 
-        game.play();
-        game.save();
-        game.pause();
-        game.resume();
-        game.stop();
-
-        println("");
-
-        song.play();
-        song.record();
-        song.pause();
-        song.resume();
-        song.stop();
-
-        println("");
-
-        video.play();
-        video.pause();
-        video.resume();
-        video.stop();
+        println(employee.calculateSalary(200) );
+        println(freelancer.calculateSalary(1600) );
     }
 }
