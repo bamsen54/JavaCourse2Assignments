@@ -10,6 +10,5 @@ public class Main {
     void main() {
 
         println( CharCounter.charCounter("abba", 'a' ) );
-
     }
 }
