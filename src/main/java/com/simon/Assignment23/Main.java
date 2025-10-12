@@ -12,6 +12,11 @@ public class Main {
         Product p = new Product("milk", 1.25);
         p.applyDiscount(25);
 
-        println( p.getPrice() );
+        Order orders = new Order();
+
+        orders.addProduct( p );
+        orders.addProduct( new Product( "Cookies", 1.5 ) );
+
+        orders.printReceipt();
     }
 }

@@ -8,8 +8,9 @@ public class Main {
 
     void main() {
 
-        Person person1 = new Person( "Jane Doe", 21 );
-        Person person2 = new Person( "John Doe", 30 );
+
+        Person person1 = new Person( "Jane Doe", 21, new Address("Main St.", 1, 12, "NY") );
+        Person person2 = new Person( "John Doe", 30, new Address( "Second st.", 5, 32, "LA" ) );
 
         if( person1.isOlderThan(person2) )
             println( "person1 is older" );
@@ -19,5 +20,10 @@ public class Main {
 
         else
             println( "person2 is older" );
+
+        println("\n");
+
+        println(person1);
+        println(person2);
     }
 }
