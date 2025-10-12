@@ -19,6 +19,5 @@ public class Main {
 
         else
             println( "person2 is older" );
-
     }
 }
