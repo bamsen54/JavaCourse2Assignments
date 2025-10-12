@@ -1,5 +1,7 @@
 package com.simon.Assignment8;
 
+import static java.lang.IO.*;
+
 public class BankAccount {
 
     private double balance;
@@ -13,6 +15,11 @@ public class BankAccount {
         return this.balance;
     }
 
+    public void setBalance(double balance) {
+
+        this.balance = balance;
+    }
+
     public void deposit(double amount) {
 
         if( amount > 0 )
@@ -23,5 +30,9 @@ public class BankAccount {
 
         if( amount > 0 )
             this.balance -= amount;
+
+        if( amount > this.balance )
+            println( " not enough money " );
+
     }
 }
